@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+    <link rel="stylesheet" href="honey.css">
+</head>
+
+<body>
+
+    <!-- FIRST DESIGN -->
+    <main class="birthday-card">
+        <div class="balloon balloon-1">🎈</div>
+        <div class="balloon balloon-2">🎈</div>
+
+        <div class="intro">
+            <div class="sparkles">✨ ✨ ✨</div>
+            <div class="cake">🎂</div>
+
+            <h1>Happy Birthday!</h1>
+            <p>A little surprise is waiting for you...</p>
+
+            <button id="openButton" class="main-button">
+                🎁 Click Me
+            </button>
+        </div>
+    </main>
+
+
+    <!-- NAME INPUT -->
+    <div id="nameModal" class="overlay">
+
+        <div class="modal-card">
+
+            <button id="closeButton" class="close-button">
+                ×
+            </button>
+
+            <div class="gift">🎁</div>
+
+            <h2>One little question...</h2>
+
+            <p>
+                Enter the secret name to open your birthday surprise.
+            </p>
+
+            <input
+                id="nameInput"
+                type="text"
+                placeholder="Enter name"
+                autocomplete="off"
+            >
+
+            <button id="unlockButton" class="main-button">
+                🔓 Unlock
+            </button>
+
+            <p id="errorMessage" class="error-message"></p>
+
+        </div>
+    </div>
+
+
+    <!-- BIRTHDAY SURPRISE -->
+    <!-- This is hidden until hufancia is entered -->
+    <div id="surprise" class="overlay">
+
+        <div class="surprise-card">
+
+            <!-- Your picture appears ONLY here -->
+            <div class="birthday-photo">
+                <img src="kikay.jpg" alt="Birthday Photo">
+            </div>
+
+            <div class="big-cake">🎂</div>
+
+            <h2>Happy Birthday!</h2>
+
+         <h3 id="birthdayName">
+    HONEY 🌹
+</h3>
+
+            <p class="message">
+                Wishing you a beautiful birthday filled with
+                happiness, love, laughter, and wonderful memories. 💖
+            </p>
+
+            <p class="wish">
+                ✨ May all your wishes come true! ✨
+            </p>
+
+            <button id="celebrateButton" class="main-button">
+                🎉 Celebrate!
+            </button>
+
+        </div>
+    </div>
+
+
+    <script src="H.js"></script>
+
+</body>
+</html>
